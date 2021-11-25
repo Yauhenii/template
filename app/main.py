@@ -1,4 +1,11 @@
 import uvicorn
 
-if __name__ == '__main__':
-    uvicorn.run("api:app",host="127.0.0.1",port=5001,log_level='info')
+from config import settings
+
+if __name__ == "__main__":
+    uvicorn.run(
+        settings.uvicorn.app,
+        host=settings.uvicorn.host,
+        port=settings.uvicorn.port,
+        log_level=settings.uvicorn.log_level,
+    )
