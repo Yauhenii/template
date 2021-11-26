@@ -1,8 +1,9 @@
 import logging
 
 from fastapi import FastAPI
-from model import Entity
-from stub import create_entity, create_entity_by_index
+
+from app.model import Entity
+from app.stub import create_entity, create_entity_by_index
 
 app = FastAPI()
 logger = logging.getLogger("uvicorn.error")

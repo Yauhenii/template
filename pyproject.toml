@@ -1,0 +1,13 @@
+[tool.pylint]
+    # [tool.pylint.master]
+    #     init-hook = 'import os.path; import sys; sys.path.append(os.path.join(os.path.dirname(os.path.realpath(__file__)), os.pardir));'
+    [tool.pylint.'MESSAGES CONTROL']
+        max-line-length = 120
+        disable = [
+            'C0114',
+            'C0115',
+            'C0116',
+            'C0413', # append sys dir above
+            'no-name-in-module', # pydantic
+            'too-few-public-methods' # pydantic
+            ]

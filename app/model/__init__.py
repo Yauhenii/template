@@ -1,1 +1,1 @@
-from model.entity import Entity
+from app.model.entity import Entity
