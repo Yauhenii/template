@@ -7,7 +7,7 @@ fastapi>=0.70.0
 idna>=3.3
 pydantic>=1.8.2
 sniffio>=1.2.0
-starlette>=0.16.0
+starlette==0.16.0
 typing-extensions>=4.0.0
 dynaconf>=3.1.7
 black>=21.11b1
