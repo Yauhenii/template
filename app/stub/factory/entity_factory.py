@@ -3,7 +3,7 @@ from datetime import date
 from model import Entity
 
 
-def create_entity(name:str, index: int, number: float, date: date) -> Entity:
+def create_entity(name: str, index: int, number: float, date: date) -> Entity:
     entity = Entity(
         entity_name="entity" + str(index),
         entity_index=index,

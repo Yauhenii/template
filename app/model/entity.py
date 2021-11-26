@@ -1,5 +1,6 @@
-from pydantic.main import BaseModel
 from datetime import date
+
+from pydantic.main import BaseModel
 
 
 class Entity(BaseModel):

@@ -1,5 +1,4 @@
 import uvicorn
-
 from config import settings
 
 if __name__ == "__main__":
@@ -8,5 +7,5 @@ if __name__ == "__main__":
         host=settings.uvicorn.host,
         port=settings.uvicorn.port,
         log_config=settings.logging.log_config_path,
-        reload = settings.uvicorn.reload
+        reload=settings.uvicorn.reload,
     )
