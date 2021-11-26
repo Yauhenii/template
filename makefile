@@ -5,6 +5,7 @@ activate_path = $(venv_path)/bin/activate
 python_path = $(venv_path)/bin/python3.8
 black_path = $(venv_path)/bin/black
 isort_path = $(venv_path)/bin/isort
+lint_path = $(venv_path)/bin/pylint
 app_path = app
 main_path = $(app_path)/main.py
 
@@ -40,4 +41,10 @@ format:
 	@(\
 	$(black_path) $(app_path); \
 	$(isort_path) $(app_path); \
+	)
+
+.PHONY: lint
+lint:
+	@(\
+	$(lint_path) $(app_path); \
 	)
